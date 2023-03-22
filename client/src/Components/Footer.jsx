@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="flex justify-between mt-24 bg-black w-full px-8 py-12 text-white rounded-t-md">
+    <footer className="flex justify-between mt-40 bg-black w-full px-8 py-12 text-white rounded-t-md">
       <div>
         <h1 className="text-3xl">Bellus</h1>
         <p className="max-w-sm mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta dui vitae sapien malesuada,</p>

@@ -1,5 +1,9 @@
+import { useContext } from "react"
 import { Link } from "react-router-dom"
+
+import { UserContext } from "../Context/UserContext"
 export const Header = () => {
+  const {user} = useContext(UserContext)
   return (
     <header className="flex justify-between items-center py-4 text-black">
       <Link to="/" className="flex gap-1 items-center">
@@ -16,10 +20,16 @@ export const Header = () => {
         <a className="font-medium" href="#">Contact</a>
       </nav>
 
-      <nav>
-        <Link to="/login" className="px-4 py-2 rounded-md font-medium">Login</Link>
-        <Link to="/signup" className="btn-primary">Signup</Link>
-      </nav>
-    </header>
+      {!user && (
+        <nav>
+          <Link to="/login" className="px-4 py-2 rounded-md font-medium">Login</Link>
+          <Link to="/signup" className="btn-primary">Signup</Link>
+        </nav>
+      )}
+
+      {user && (
+        <Link to="/profile" className="font-bold">{user.name}</Link>
+      )}
+      </header>
   )
 }

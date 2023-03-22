@@ -14,7 +14,7 @@ export const HomePage = () => {
       </svg>
       </section>
 
-      <section className="mt-24">
+      <section className="mt-28">
         <div className="flex items-center justify-between">
           <h1 className="max-w-md text-black text-5xl">Choose your luxurious room</h1>
           <p className="max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta dui vitae sapien malesuada, non sodales lacus tempor. Donec turpis diam, lacinia ac turpis ut, gravida accumsan est.</p>
@@ -22,7 +22,7 @@ export const HomePage = () => {
         <RoomList />
       </section>
     
-      <section className="mt-24">
+      <section className="mt-28">
         <div className="flex items-center justify-between">
           <h1 className="max-w-md text-black text-5xl">Our popular rooms</h1>
           <p className="max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta dui vitae sapien malesuada, non sodales lacus tempor. Donec turpis diam, lacinia ac turpis ut, gravida accumsan est.</p>
@@ -35,7 +35,7 @@ export const HomePage = () => {
         </div>
       </section>
 
-      <section className="mt-24">
+      <section className="mt-28">
         <h1 className="text-black text-5xl text-center">What does our customer say?</h1>
         <p className="max-w-xl mx-auto mt-2 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porta dui vitae sapien malesuada, non sodales lacus tempor.</p>
 
