@@ -23,7 +23,7 @@ html{
 }
 
 input, textarea{
-  @apply px-4 py-2 text-black rounded-sm max-w-lg shadow-md;
+  @apply px-4 py-2 text-black rounded-sm shadow-md;
 }
 
 select {

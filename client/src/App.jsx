@@ -3,7 +3,9 @@ import { HomePage } from "./Pages/HomePage"
 import { LoginPage } from "./Pages/LoginPage"
 import { SignupPage } from "./Pages/SignupPage"
 import { ProfilePage } from "./Pages/ProfilePage"
+import { PlacesFormPage } from "./Pages/PlacesFormPage"
 import { SearchRooms } from "./Pages/SearchRooms"
+
 import { Routes, Route } from "react-router-dom"
 
 import { UserContextProvider } from "./Context/UserContext"
@@ -20,7 +22,8 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/account/:subpage" element={<ProfilePage />} />
+          <Route path="/account/places/new" element={<PlacesFormPage />} />
           <Route path="/search-rooms" element={<SearchRooms />} />
         </Route>
       </Routes>

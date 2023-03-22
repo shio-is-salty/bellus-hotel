@@ -28,7 +28,7 @@ export const Header = () => {
       )}
 
       {user && (
-        <Link to="/profile" className="font-bold">{user.name}</Link>
+        <Link to="/account/profile" className="font-bold">{user.name}</Link>
       )}
       </header>
   )
